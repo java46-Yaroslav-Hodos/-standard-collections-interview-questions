@@ -12,21 +12,23 @@ class MapTests {
 		String strings[] = {"lpm", "abc", "ab", "a", "lpm", "abc", "lpm"};
 		displayStringOccurrences(strings);
 		/*
-		 * lpm => 3
-		 * abc => 2
-		 * a => 1
-		 * ab => 1
-		 * */
+		 lpm => 3
+		 abc => 2
+		 a => 1
+		 ab => 1 
+		 *  */
+		
 	}
 
 	private void displayStringOccurrences(String[] strings) {
 		Map<String, Integer> mapOccurrences = getMapOccurrences(strings);
-		List<Map.Entry<String, Integer>> sortedListOccurrences = getSortedList(mapOccurrences);
-		displayListOccurences(sortedListOccurrences);
+		List<Entry<String, Integer>> sortedListOccurrences = getSortedList(mapOccurrences);
+		displayListOccurrences(sortedListOccurrences);
+		
 	}
 
-	private void displayListOccurences(List<Entry<String, Integer>> List) {
-		List.forEach(e -> System.out.printf("%s => %d\n", e.getKey(), e.getValue()));
+	private void displayListOccurrences(List<Entry<String, Integer>> list) {
+		list.forEach(e -> System.out.printf("%s => %d\n", e.getKey(), e.getValue()));
 		
 	}
 

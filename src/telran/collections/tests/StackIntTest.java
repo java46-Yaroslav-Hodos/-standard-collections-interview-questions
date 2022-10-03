@@ -37,7 +37,7 @@ class StackIntTest {
 
 	@Test
 	void testPush() {
-		stack.push(10);
+		stack.push(-10);
 		assertNotEquals(list.removeLast(), stack.pop());
 	}
 
