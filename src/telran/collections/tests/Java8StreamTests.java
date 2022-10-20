@@ -83,7 +83,6 @@ class Java8StreamTests {
 	@Test
 	void printDigitOccurrences() {
 		
-		//TODO
 		//generate 1_000_000 random numbers from 0 to Integer.MAX_VALUE
 		//print digits occurrences in descending order of occurrences
 		// 1: <occurrences>
