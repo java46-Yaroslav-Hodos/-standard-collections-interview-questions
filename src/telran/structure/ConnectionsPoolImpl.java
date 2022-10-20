@@ -20,6 +20,8 @@ public class ConnectionsPoolImpl implements ConnectionsPool{
 			nodeConnection.next = head;
 			if (head != null) {
 				head.prev = nodeConnection;
+			} else {
+				tail = nodeConnection;
 			}
 			head = nodeConnection;
 			
