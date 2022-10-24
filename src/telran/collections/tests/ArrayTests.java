@@ -169,7 +169,7 @@ class ArrayTests {
 	@SuppressWarnings("unchecked")
 	static private <T>  boolean sortCheck(T[] array, int index1, int index2) {
 
-		return ((Comparable<T>) array[index1]).compareTo(array[index2]) <= 0 ? true : false;
+		return ((Comparable<T>) array[index1]).compareTo(array[index2]) <= 0;
 	}
 
 }
